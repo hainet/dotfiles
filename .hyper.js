@@ -132,7 +132,7 @@ module.exports = {
 
     opacity: {
       focus: 0.90,
-      blur: 0.30
+      blur: 0.50
     },
 
     overlay: {
@@ -148,7 +148,7 @@ module.exports = {
       footerTransparent: false
     },
 
-    pokemon: ['mew'],
+    pokemon: ['goldeen', 'dewgong'],
     unibody: 'true',
     poketab: 'true',
   },
