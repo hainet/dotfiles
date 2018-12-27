@@ -136,6 +136,7 @@ module.exports = {
     },
 
     overlay: {
+      alwaysOnTop: false,
       animate: false,
       hotkeys: ['Ctrl+Shift+`'],
       hideDocs: true,
@@ -173,8 +174,8 @@ module.exports = {
 
   keymaps: {
     'tab:new': 'ctrl+shift+t',
-    'tab:next': 'ctrl+shift+[',
-    'tab:prev': 'ctrl+shift+]',
+    'tab:next': 'ctrl+shift+]',
+    'tab:prev': 'ctrl+shift+[',
     'pane:splitVertical': 'ctrl+t',
     'pane:next': 'ctrl+]',
     'pane:prev': 'ctrl+[',
