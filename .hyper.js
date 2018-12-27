@@ -138,8 +138,10 @@ module.exports = {
     overlay: {
       animate: false,
       hotkeys: ['Ctrl+Shift+`'],
+      hideDocs: true,
       primaryDisplay: true,
-      size: 0.9
+      size: 0.9,
+      unique: true
     },
 
     hyperStatusLine: {
