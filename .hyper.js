@@ -110,7 +110,7 @@ module.exports = {
     shellArgs: ['--login'],
 
     // for environment variables
-    env: {},
+    env: {LANG: 'ja_JP.UTF-8'},
 
     // set to `false` for no bell
     bell: 'SOUND',
@@ -131,7 +131,7 @@ module.exports = {
     // for advanced config flags please refer to https://hyper.is/#cfg
 
     opacity: {
-      focus: 0.90,
+      focus: 0.85,
       blur: 0.50
     },
 
@@ -145,8 +145,16 @@ module.exports = {
       unique: true
     },
 
+    otherShells: [
+      {shell: "C:\\Windows\\System32\\cmd.exe", shellArgs: [], shellName: "cmd"}
+    ],
+
     hyperStatusLine: {
       footerTransparent: false
+    },
+
+    monokaiDeluxe: {
+      borderWidth: '1px'
     },
 
     pokemon: ['goldeen', 'dewgong'],
@@ -163,8 +171,14 @@ module.exports = {
   plugins: [
     'hyper-opacity',
     'hyperterm-overlay',
+    'hyper-tab-icons-plus', // https://www.npmjs.com/package/hyper-tab-icons-plus
     'hyper-statusline',
-    'hyper-pokemon'
+    'hypercwd',
+    'hyper-cwd-wsl', // https://www.npmjs.com/package/hyper-cwd-wsl
+    'hyperlinks',
+    'hyper-monokai-deluxe',
+    'hyper-dark-scrollbar', // https://www.npmjs.com/package/hyper-dark-scrollbar
+    // 'hyper-pokemon'
   ],
 
   // in development, you can create a directory under
